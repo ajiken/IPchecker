@@ -15,7 +15,7 @@ def get_ip_address():
 
 def main():
     # Googleサービスアカウントの認証情報を指定
-    path = './accesskey/path/to/accesskey.json'
+    path = './path/to/accesskey.json'
     scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
     credentials = ServiceAccountCredentials.from_json_keyfile_name(path, scope)
 
